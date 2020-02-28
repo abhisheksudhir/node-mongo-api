@@ -1,0 +1,24 @@
+<h1>
+    Courses
+</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    {{!-- as handlebars provide us the iteration methods --}}
+    {{#each data }}    
+    <tr>
+        <td>{{this.courseId}}</td>
+        <td>{{this.courseName}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+{{!-- Handlebars: Access has been denied to resolve the property "courseId" because it is not an "own property" of its parent.
+You can add a runtime option to disable the check or this warning:
+See https://handlebarsjs.com/api-reference/runtime-options.html#options-to-control-prototype-access for details
+Handlebars: Access has been denied to resolve the property "courseName" because it is not an "own property" of its parent.
+You can add a runtime option to disable the check or this warning:
+See https://handlebarsjs.com/api-reference/runtime-options.html#options-to-control-prototype-access for details --}}
